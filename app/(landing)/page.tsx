@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div >
-     This is the landing page. 
+    <div>
+     This is the landing page.
     </div>
   )
 }
