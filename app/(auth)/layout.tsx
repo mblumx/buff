@@ -1,6 +1,6 @@
 
 
-import { Header } from "./header"
+import { Header } from "../(landing)/header"
 
 type Props = {
   children: React.ReactNode
