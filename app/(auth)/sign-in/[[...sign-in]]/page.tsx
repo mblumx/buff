@@ -1,27 +1,8 @@
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs"
+import { SignIn } from "@clerk/nextjs";
+
 
 const SignInPage = () => {
-  return (
-    <ClerkProvider>
-      <html lang="en">
-        <body>
-          <SignedOut>
-            <SignInButton />
-            
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </body>
-      </html>
-    </ClerkProvider>
-  )
+  return (  <SignIn path="/sign-in"/>);
 }
-
-export default SignInPage
+ 
+export default SignInPage;
