@@ -1,9 +1,5 @@
-import { Button } from "@/components/ui/button"
-
-export default function Home() {
-  return (
-    <div>
-     This is the landing page.
-    </div>
-  )
+const LandingPage = () => {
+  return ( <div>This is the main (landing) page</div> );
 }
+ 
+export default LandingPage;

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import { Header } from "./(landing)/header";
 
-const font = Inter({ subsets: ["latin"] });
+
+const font = Open_Sans({ subsets: ["latin"] });
 
 type Props = React.ReactNode
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <title>Buff: The app for movie buff.</title>
+      <title>Buff: The app for movie buffs.</title>
       <ClerkProvider>
         <body className={font.className}>{children}</body>
       </ClerkProvider>
